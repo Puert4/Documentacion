@@ -40,16 +40,16 @@ public class HagendarCita extends javax.swing.JFrame {
         btnAgendar = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
         ImagenHospital = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        txtCurp = new javax.swing.JTextField();
+        Iniciar_Sesion = new javax.swing.JLabel();
+        FondoInicio = new javax.swing.JPanel();
         Usuario3 = new javax.swing.JLabel();
-        txtCurp1 = new javax.swing.JTextField();
+        txtCurp = new javax.swing.JTextField();
         Usuario4 = new javax.swing.JLabel();
+        txtCurp1 = new javax.swing.JTextField();
         Usuario5 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
-        txtCurp2 = new javax.swing.JTextField();
         Usuario6 = new javax.swing.JLabel();
-        Iniciar_Sesion = new javax.swing.JLabel();
+        txtCurp2 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -114,7 +114,12 @@ public class HagendarCita extends javax.swing.JFrame {
         ImagenHospital.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         FondoPanel.add(ImagenHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 350, 130));
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Pacientes"));
+        Iniciar_Sesion.setFont(new java.awt.Font("Roboto", 3, 24)); // NOI18N
+        Iniciar_Sesion.setText("Agendar cita");
+        FondoPanel.add(Iniciar_Sesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 50, 210, 40));
+
+        FondoInicio.setBackground(new java.awt.Color(255, 255, 255));
+        FondoInicio.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         Usuario3.setFont(new java.awt.Font("Roboto", 3, 14)); // NOI18N
         Usuario3.setText("Hospital");
@@ -128,64 +133,62 @@ public class HagendarCita extends javax.swing.JFrame {
         Usuario6.setFont(new java.awt.Font("Roboto", 3, 14)); // NOI18N
         Usuario6.setText("Medico");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(txtCurp2, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(Usuario3)
-                        .addComponent(txtCurp)
-                        .addComponent(txtCurp1)
-                        .addComponent(Usuario4)
-                        .addComponent(Usuario5, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 180, Short.MAX_VALUE))
-                    .addComponent(Usuario6, javax.swing.GroupLayout.Alignment.LEADING))
-                .addGap(0, 58, Short.MAX_VALUE))
+        javax.swing.GroupLayout FondoInicioLayout = new javax.swing.GroupLayout(FondoInicio);
+        FondoInicio.setLayout(FondoInicioLayout);
+        FondoInicioLayout.setHorizontalGroup(
+            FondoInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(FondoInicioLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(FondoInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtCurp1)
+                    .addComponent(jTextField1)
+                    .addGroup(FondoInicioLayout.createSequentialGroup()
+                        .addGroup(FondoInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Usuario3)
+                            .addComponent(txtCurp, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Usuario4)
+                            .addComponent(Usuario5, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Usuario6)
+                            .addComponent(txtCurp2, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 42, Short.MAX_VALUE)))
+                .addContainerGap())
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(7, 7, 7)
+        FondoInicioLayout.setVerticalGroup(
+            FondoInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(FondoInicioLayout.createSequentialGroup()
                 .addComponent(Usuario3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtCurp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Usuario4)
-                .addGap(1, 1, 1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(txtCurp1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Usuario5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Usuario6)
-                .addGap(1, 1, 1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtCurp2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(38, Short.MAX_VALUE))
+                .addGap(0, 25, Short.MAX_VALUE))
         );
 
-        FondoPanel.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 250, 270));
-
-        Iniciar_Sesion.setFont(new java.awt.Font("Roboto", 3, 24)); // NOI18N
-        Iniciar_Sesion.setText("Agendar cita");
-        FondoPanel.add(Iniciar_Sesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 50, 210, 40));
+        FondoPanel.add(FondoInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 250, 260));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(FondoPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 761, Short.MAX_VALUE)
+                .addComponent(FondoPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 784, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(FondoPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 481, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 46, Short.MAX_VALUE))
+                .addGap(0, 99, Short.MAX_VALUE))
         );
 
         pack();
@@ -234,6 +237,7 @@ public class HagendarCita extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel FondoAzul;
+    private javax.swing.JPanel FondoInicio;
     private javax.swing.JPanel FondoPanel;
     private javax.swing.JLabel Hospital_General;
     private javax.swing.JLabel ImagenHospital;
@@ -246,7 +250,6 @@ public class HagendarCita extends javax.swing.JFrame {
     private javax.swing.JLabel Usuario6;
     private javax.swing.JButton btnAgendar;
     private javax.swing.JButton btnCancelar;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField txtCurp;
     private javax.swing.JTextField txtCurp1;
